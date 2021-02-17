@@ -8,9 +8,10 @@
             <h4>PayNow Payment for {{refNumber}}</h4>
             <p class="lead mb-1">Instructions:</p>
             <p class="d-flex align-items-center"><span>Use your bank app to scan this QR code and make payment. </span> <b-badge variant="success" class="ml-1"><BIconCheckCircleFill/> Recommended</b-badge></p>
-            <p class="small">Alternatively, send <strong>SGD {{amount}}</strong> to <strong>UEN {{uen}}</strong>, with reference <code>{{refNumber}}</code></p>
+            <p class="small">Alternatively, send <strong>SGD {{amount}}</strong> to UEN<strong> {{uen}}</strong>, with reference <strong>{{refNumber}}</strong> + family code</p>
             <hr/>
             <p class="small">Once payment has been made, you may close this window. We will verify your payment as soon as we can.</p>
+			<p class="small">You may contact <a href="mailto:accounts@stosc.com">accounts@stosc.com </a>for any queries</p>
             <b-button size="sm" variant="primary" @click="back" v-if="!noBack"><BIconArrowLeft/> Back to Invoice.</b-button>
             <b-button size="sm" variant="secondary" class="ml-1" @click="close"><BIconX/> Close this window.</b-button>
       </div>
